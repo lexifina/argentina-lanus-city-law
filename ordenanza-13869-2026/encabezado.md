@@ -1,0 +1,5 @@
+Ordenanza Nº13869
+Ordenanza Nº 13869
+Lanús, 25/09/2025
+D-00211/25.- H.C.D.
+ORDENANZA
