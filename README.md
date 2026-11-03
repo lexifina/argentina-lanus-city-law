@@ -136,7 +136,7 @@ Sistema de Boletines Oficiales Municipales (SIBOM), Subsecretaría Legal y Técn
 ## How it is checked
 
 - Every version of every ordinance is read back from git on the day it took effect and on the day before (`tools/check_repo.py`); both must match `corpus.json`.
-- The letters and digits of every version equal those of the source page it was read from (read again with an independent HTML reader), so no word is lost or added.
+- For the HTML ordinances, the letters and digits of every version equal those of the source page read again with an independent HTML reader. Ordenanza 13853/2025 is labelled OCR from its official six-page scan and was checked page by page. Ordenanza 13849/2025 is a withdrawn incomplete record, not a complete legal text.
 - Health checks: no merge commits, commit dates never go backwards, nothing dated in the future, and every commit's trailers parse.
 
 ## Limits
@@ -145,9 +145,9 @@ This is not an official publication. The binding text is the one published in th
 
 ## Additional ordinances
 
-2 additional ordinances from the same official municipal bulletin are included as the oldest version available. They preserve the text the bulletin publishes, without consolidation of later amendments. Ordinances without a recognised article split are single-file acts in `texto-completo.md`.
+Two additional catalogue records come from the same official municipal bulletin. Ordenanza 13853/2025 is restored as source-checked OCR, split into article files, without consolidation of later amendments. Its general record date is 20 December 2025, while article 22 applies to entities already recognized by the Municipality from promulgation on 1 October 2025. Ordenanza 13849/2025 remains withdrawn and incomplete: its source is a complex budget scan, and article 4 applies its amendment from July 2025, so this corpus asserts no blanket November commencement for it.
 
 | Folder | Ordinance | Text held |
 | --- | --- | --- |
-| `ordenanza-13849-2025/` | Ordenanza 13849/2025: Ordenanza 13849/2025 | oldest version available, in force 2025-11-13; article files |
-| `ordenanza-13853-2025/` | Ordenanza 13853/2025: Ordenanza 13853/2025 | oldest version available, in force 2025-12-20; single-file act |
+| `ordenanza-13849-2025/` | Ordenanza 13849/2025: ampliación del cálculo de recursos y presupuesto de gastos 2025 | withdrawn incomplete record; held pending complete recovery; article 4 applies its amendment from July 2025 |
+| `ordenanza-13853-2025/` | Ordenanza 13853/2025: régimen simplificado para entidades de bien público | OCR from the official six-page scan, checked page by page; general record date 2025-12-20; article 22 scoped from promulgation 2025-10-01 |

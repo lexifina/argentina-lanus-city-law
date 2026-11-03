@@ -5,7 +5,7 @@
  "level": "municipality",
  "parent": "ar-b",
  "repo": "https://github.com/lexifina/argentina-lanus-city-law",
- "build": "built: municipal ordinances (108 ordinances, 108 versions) from https://sibom.slyt.gba.gob.ar/cities/67",
+ "build": "built: 107 complete municipal ordinances and 1 withdrawn incomplete catalogue record from https://sibom.slyt.gba.gob.ar/cities/67",
  "language": "es",
  "sources": 1
 }
