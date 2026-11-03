@@ -8,7 +8,7 @@ The text is in Spanish, exactly as the source prints it.
 
 ## What this repository holds
 
-106 ordinances so far, in force from 25 September 2024 to 26 June 2026, each as published in the Boletín Oficial Municipal de Lanús, added in parts.
+108 ordinances so far, as published in the official municipal bulletin. The additional records below are the oldest version available; later amendments are not consolidated.
 
 | Folder | Ordinance | History |
 | --- | --- | --- |
@@ -143,11 +143,11 @@ Sistema de Boletines Oficiales Municipales (SIBOM), Subsecretaría Legal y Técn
 
 This is not an official publication. The binding text is the one published in the Boletín Oficial Municipal de Lanús. Only the ordinances listed above are included, and amendments are not consolidated into the texts they amend.
 
-## Left out
+## Additional ordinances
 
-2 ordinances that SIBOM lists in the period covered are not included, because the Boletín Oficial Municipal de Lanús page gives no article text to read:
+2 additional ordinances from the same official municipal bulletin are included as the oldest version available. They preserve the text the bulletin publishes, without consolidation of later amendments. Ordinances without a recognised article split are single-file acts in `texto-completo.md`.
 
-| Ordinance | Published | Why | Page |
-| --- | --- | --- | --- |
-| Ordenanza 13849 | 4 November 2025 | text only as a PDF annex | <https://sibom.slyt.gba.gob.ar/bulletins/13819/contents/2305879> |
-| Ordenanza 13853 | 11 December 2025 | text only as a PDF annex | <https://sibom.slyt.gba.gob.ar/bulletins/14041/contents/2321528> |
+| Folder | Ordinance | Text held |
+| --- | --- | --- |
+| `ordenanza-13849-2025/` | Ordenanza 13849/2025: Ordenanza 13849/2025 | oldest version available, in force 2025-11-13; article files |
+| `ordenanza-13853-2025/` | Ordenanza 13853/2025: Ordenanza 13853/2025 | oldest version available, in force 2025-12-20; single-file act |

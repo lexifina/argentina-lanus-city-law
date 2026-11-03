@@ -1,11 +1,11 @@
 {
-  "path": "ar-b-lanus",
-  "code": "AR-B-LANUS",
-  "name": "Lanús",
-  "level": "municipality",
-  "parent": "ar-b",
-  "repo": "https://github.com/lexifina/argentina-lanus-city-law",
-  "build": "built: municipal ordinances (106 ordinances, 106 versions) from https://sibom.slyt.gba.gob.ar/cities/67",
-  "language": "es",
-  "sources": 1
+ "path": "ar-b-lanus",
+ "code": "AR-B-LANUS",
+ "name": "Lanús",
+ "level": "municipality",
+ "parent": "ar-b",
+ "repo": "https://github.com/lexifina/argentina-lanus-city-law",
+ "build": "built: municipal ordinances (108 ordinances, 108 versions) from https://sibom.slyt.gba.gob.ar/cities/67",
+ "language": "es",
+ "sources": 1
 }

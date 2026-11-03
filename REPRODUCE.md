@@ -1,12 +1,13 @@
 # How this repository was made (Lanús)
 
-This file is written by the build on 2026-11-01, the day the source data was retrieved.
+This file is written by the build on 2026-11-03, the day the source data was retrieved.
 
 ## Sources
 
 | Source | Address | Retrieved | Licence |
 | --- | --- | --- | --- |
 | Sistema de Boletines Oficiales Municipales (SIBOM), Subsecretaría Legal y Técnica, Secretaría General, Provincia de Buenos Aires: Boletín Oficial Municipal de Lanús | <https://sibom.slyt.gba.gob.ar/cities/67> | 2026-11-01 | Official municipal ordinances, published in the Boletín Oficial Municipal. Argentina's copyright law (Ley 11.723) has no express exclusion for them; ordinances are public acts of government, binding on everyone once officially published. The source states no restriction on reuse. Reproduced with attribution, following the official text. |
+| Sistema de Boletines Oficiales Municipales (SIBOM), Subsecretaría Legal y Técnica, Secretaría General, Provincia de Buenos Aires: Boletín Oficial Municipal de Lanús | <https://sibom.slyt.gba.gob.ar/cities/67> | 2026-11-03 | Official municipal ordinances, published in the Boletín Oficial Municipal. Argentina's copyright law (Ley 11.723) has no express exclusion for them; ordinances are public acts of government, binding on everyone once officially published. The source states no restriction on reuse. Reproduced with attribution, following the official text. |
 
 Every word of law in this repository comes from these sources. Lexifina reads them and records each act's dated versions, and the laws that made each change, in one corpus file. This repository is built from that file.
 
@@ -120,20 +121,22 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ordenanza-13876-2026` | Ordenanza 13876/2026: de legítimo abono y autorizase el pago de la suma total de PESOS CIENTO DIECISIETE MIL DOSCIENTOS VEINTIUNO, CON SETENTA CENTAVOS ($ 117.221,70), a favor de la Sra. Castillo Flavia Jorgelina, DNI Nº 23.815.745, en concep | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13877-2026` | Ordenanza 13877/2026: el Artículo 1° de la Ordenanza Nº 13677, el que quedará redactado de la siguiente manera: | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13878-2026` | Ordenanza 13878/2026: Autorizase un lugar sito en la calle GDOR. FELIPE LLAVALLOL número 313, de la localidad de Lanús Oeste, de este Partido, un "Espacio Reservado Transitorio para Estacionamiento" exclusivamente para ascensos y descensos de | 1 | 2026-06-26 to 2026-06-26 |
+| `ordenanza-13849-2025` | Ordenanza 13849/2025: Ordenanza 13849/2025 | 1 | 2025-11-13 to 2025-11-13 |
+| `ordenanza-13853-2025` | Ordenanza 13853/2025: Ordenanza 13853/2025 | 1 | 2025-12-20 to 2025-12-20 |
 
-The build made 106 commits:
+The build made 108 commits:
 
 | Commits | Kind |
 | ---: | --- |
-| 106 | first version of an act |
+| 108 | first version of an act |
 | 0 | one law on its in-force day |
 | 0 | changes no amendment note explains, credited to the publisher |
 
 Other counts:
-- 0 commits on the branch `futuro`: laws not yet in force on 2026-11-01.
+- 0 commits on the branch `futuro`: laws not yet in force on 2026-11-03.
 - 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
 - 106 laws in the record.
-- 212 tags.
+- 214 tags.
 
 ## Dates
 
@@ -145,13 +148,13 @@ When a law gives no date of its own, the default rule applies: An ordinance take
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `7088b9e7043c00d1ea5d61d8f14cb0193ccefbbb75421d407d3c7a6d2dcbc62f` (348381 bytes).
-- Builder blob hashes (`git hash-object`): `build.py` `a4faa25af85facb64b956b372f6b528aafdd7ec1`, `check.py` `3d00541d258745461ab52b1b0cb4e1716a27a95d`, `on.py` `644a6c0857fbcc72562032b58d57aa113fee0641`.
-- Python 3.12.10; git version 2.46.0.windows.1.
+- Corpus: sha256 `755201f5703766db6107249e854ffb508634c2786705e6efbeacaabdb6b035d0` (357450 bytes).
+- Builder blob hashes (`git hash-object`): `build.py` `900da0d33bfd1ef455267fb4dcef7961fd5acc9c`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
+- Python 3.14.4; git version 2.53.0.
 
 ## Checks
 
-106 versions of 106 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+Not yet run for this build.
 
 No second build of this corpus has been compared yet.
 
@@ -162,6 +165,9 @@ No second build of this corpus has been compared yet.
 - The Province of Buenos Aires gives its municipalities no carta orgánica: their organic law is the provincial Ley Orgánica de las Municipalidades (Decreto-Ley 6769/58), which is provincial law and not included here. So this repository starts with ordinances.
 - Ordinances are taken from SIBOM's ordinance search for the partido, read from its last result page back (the search lists them only roughly in date order) until about 200 are found, the newest it holds. They are sorted by the day they took effect and added oldest first in parts of about 50, so each part extends the history forward. An ordinance whose page carries only an extract, no article, or its text only as a PDF annex is left out; the README lists every ordinance left out and why. An ordinance published twice is taken from its first publication.
 - Units: the heading (encabezado: number, place and date, the expediente line and anything before Artículo 1) and one file per article, holding the article and everything printed after it up to the next article (signatures, annexes). Nothing is dropped. One paragraph per line, spacing normalised.
+- Additional ordinances are the oldest version available in their official SIBOM bulletin, with first_law null. They are dated by their own in-force clause or the ninth day after official publication; amendments are not consolidated.
+- A complete HTML ordinance without a recognised article split is kept as a single-file act (texto-completo.md). Extracts and pages without substantive ordinance text are not included.
+- No previously included law text or version is changed.
 
 ## What AI did and did not do
 
@@ -173,3 +179,4 @@ The commit messages are written by `build.py` from the source data.
 
 Model use at data-build time:
 - A model (Claude) wrote the fetch and parse code and chose which norms to include; it wrote no law text. Every word of law comes from the provincial source's own texts.
+- GPT-6 wrote the local parser and validation code; it wrote no law text. All legal wording is from the official SIBOM page.
