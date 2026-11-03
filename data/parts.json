@@ -134,6 +134,13 @@
     "ordenanza-13853-2025"
    ],
    "sha256": "610054f09023d6b1d20fe7a7d7dd80de492add1ade743e818ca4ba04f718bf7b"
+  },
+  "zzzz-corrects-withdrawal-ordenanza-13853-source-dates-ocr-20261103.json": {
+   "acts": [
+    "ordenanza-13849-2025",
+    "ordenanza-13853-2025"
+   ],
+   "sha256": "28739c4524cd4291ebe14bbbdfeb1b1bcd8e51c40ce7e94b3b51cd519643e29f"
   }
  },
  "schema": 1

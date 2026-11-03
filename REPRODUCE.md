@@ -121,10 +121,10 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ordenanza-13876-2026` | Ordenanza 13876/2026: de legítimo abono y autorizase el pago de la suma total de PESOS CIENTO DIECISIETE MIL DOSCIENTOS VEINTIUNO, CON SETENTA CENTAVOS ($ 117.221,70), a favor de la Sra. Castillo Flavia Jorgelina, DNI Nº 23.815.745, en concep | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13877-2026` | Ordenanza 13877/2026: el Artículo 1° de la Ordenanza Nº 13677, el que quedará redactado de la siguiente manera: | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13878-2026` | Ordenanza 13878/2026: Autorizase un lugar sito en la calle GDOR. FELIPE LLAVALLOL número 313, de la localidad de Lanús Oeste, de este Partido, un "Espacio Reservado Transitorio para Estacionamiento" exclusivamente para ascensos y descensos de | 1 | 2026-06-26 to 2026-06-26 |
-| `ordenanza-13849-2025` | Withdrawn corpus record: Ordenanza 13849/2025 | 1 | 2025-11-13 to 2025-11-13 |
-| `ordenanza-13853-2025` | Withdrawn corpus record: Ordenanza 13853/2025 | 1 | 2025-12-20 to 2025-12-20 |
+| `ordenanza-13849-2025` | Withdrawn incomplete corpus record: Ordenanza 13849/2025 | 1 | 2025-11-13 to 2025-11-13 |
+| `ordenanza-13853-2025` | Ordenanza 13853/2025: régimen simplificado para entidades de bien público (OCR from official scan; article 22 scoped from promulgation 2025-10-01) | 1 | 2025-12-20 to 2025-12-20 |
 
-The build made 110 commits:
+The build made 112 commits:
 
 | Commits | Kind |
 | ---: | --- |
@@ -135,7 +135,7 @@ The build made 110 commits:
 Other counts:
 - 0 commits on the branch `futuro`: laws not yet in force on 2026-11-03.
 - 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
-- 106 laws in the record.
+- 108 laws in the record.
 - 214 tags.
 
 ## Dates
@@ -148,7 +148,7 @@ When a law gives no date of its own, the default rule applies: An ordinance take
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `28e6d924a3f51f360239bc356be4890b098994c839e47ec44da9e309c0d69496` (360874 bytes).
+- Corpus: sha256 `f4a0283f89bf896c2958414a458d4be97d49fda00b3582ea267fc24e0bb1c93a` (383506 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `35388bee5aa05369f7da68f5a8fa015ea8d442b8`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
@@ -170,6 +170,11 @@ No second build of this corpus has been compared yet.
 - No previously included law text or version is changed.
 - ordenanza-13849-2025: withdraw the incomplete corpus record; source identity ordenanza-13849-2025. The original history and tags remain. This is not a legislative repeal.
 - ordenanza-13853-2025: withdraw the incomplete corpus record; source identity ordenanza-13853-2025. The original history and tags remain. This is not a legislative repeal.
+- ordenanza-13849-2025 remains a metadata-only corpus withdrawal with no legal units because its operative scan and financial tables are incomplete. The replacement labels it incomplete and records that article 4's amendment applies from July 2025; no blanket November commencement is asserted.
+- ordenanza-13853-2025 restores the complete continuing ordinance after the earlier incomplete record was withdrawn. It is an OCR-derived article-split act from the reusable official scan; all six rendered pages were checked word for word, and no wording was supplied from a model.
+- The 13853 PDF has seven image objects: five normative full-page scans on pages 2 through 6, all transcribed and checked, plus a blank scan background and municipal crest on page 1. Zero normative images are omitted.
+- The general 13853 record date is the publication-based 2025-12-20 date; typed applicability records article 22's narrower rule for already recognized entities from promulgation on 2025-10-01.
+- No previously published part is edited; this correction restores 13853 and updates only the withdrawal metadata for held act 13849.
 
 ## What AI did and did not do
 
@@ -183,3 +188,4 @@ Model use at data-build time:
 - A model (Claude) wrote the fetch and parse code and chose which norms to include; it wrote no law text. Every word of law comes from the provincial source's own texts.
 - GPT-6 wrote the local parser and validation code; it wrote no law text. All legal wording is from the official SIBOM page.
 - A model classified source completeness and prepared editorial withdrawal metadata. No model-generated legal text is included.
+- GPT-6 identified OCR disagreements for human-verifiable correction rules and prepared validation code. Tesseract produced the legal transcription; every correction was checked against the retained official page image, and no model-generated wording is treated as law text.
