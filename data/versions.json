@@ -1487,13 +1487,13 @@
   },
   {
    "slug": "ordenanza-13849-2025",
-   "short": "Ordenanza 13849/2025",
-   "title": "Ordenanza 13849/2025: Ordenanza 13849/2025",
+   "short": "Withdrawn corpus record: Ordenanza 13849/2025",
+   "title": "Withdrawn corpus record: Ordenanza 13849/2025",
    "url": "https://sibom.slyt.gba.gob.ar/bulletins/13819/contents/2305879",
    "versions": [
     {
      "from": "2025-11-13",
-     "units": 2,
+     "units": 0,
      "source_url": "https://sibom.slyt.gba.gob.ar/bulletins/13819/contents/2305879/download_annex?annex_id=57240",
      "sha256": "b256b1d4953d90c70a295077ee569e02d096986dca84d115ee75b1b59af2d552"
     }
@@ -1501,13 +1501,13 @@
   },
   {
    "slug": "ordenanza-13853-2025",
-   "short": "Ordenanza 13853/2025",
-   "title": "Ordenanza 13853/2025: Ordenanza 13853/2025",
+   "short": "Withdrawn corpus record: Ordenanza 13853/2025",
+   "title": "Withdrawn corpus record: Ordenanza 13853/2025",
    "url": "https://sibom.slyt.gba.gob.ar/bulletins/14041/contents/2321528",
    "versions": [
     {
      "from": "2025-12-20",
-     "units": 1,
+     "units": 0,
      "source_url": "https://sibom.slyt.gba.gob.ar/bulletins/14041/contents/2321528/download_annex?annex_id=58771",
      "sha256": "4b31d950feb06321ad690a6d994f8ff68347866aefed4a525ad06b40a3358150"
     }

@@ -121,10 +121,10 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ordenanza-13876-2026` | Ordenanza 13876/2026: de legítimo abono y autorizase el pago de la suma total de PESOS CIENTO DIECISIETE MIL DOSCIENTOS VEINTIUNO, CON SETENTA CENTAVOS ($ 117.221,70), a favor de la Sra. Castillo Flavia Jorgelina, DNI Nº 23.815.745, en concep | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13877-2026` | Ordenanza 13877/2026: el Artículo 1° de la Ordenanza Nº 13677, el que quedará redactado de la siguiente manera: | 1 | 2026-06-26 to 2026-06-26 |
 | `ordenanza-13878-2026` | Ordenanza 13878/2026: Autorizase un lugar sito en la calle GDOR. FELIPE LLAVALLOL número 313, de la localidad de Lanús Oeste, de este Partido, un "Espacio Reservado Transitorio para Estacionamiento" exclusivamente para ascensos y descensos de | 1 | 2026-06-26 to 2026-06-26 |
-| `ordenanza-13849-2025` | Ordenanza 13849/2025: Ordenanza 13849/2025 | 1 | 2025-11-13 to 2025-11-13 |
-| `ordenanza-13853-2025` | Ordenanza 13853/2025: Ordenanza 13853/2025 | 1 | 2025-12-20 to 2025-12-20 |
+| `ordenanza-13849-2025` | Withdrawn corpus record: Ordenanza 13849/2025 | 1 | 2025-11-13 to 2025-11-13 |
+| `ordenanza-13853-2025` | Withdrawn corpus record: Ordenanza 13853/2025 | 1 | 2025-12-20 to 2025-12-20 |
 
-The build made 108 commits:
+The build made 110 commits:
 
 | Commits | Kind |
 | ---: | --- |
@@ -148,7 +148,7 @@ When a law gives no date of its own, the default rule applies: An ordinance take
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `755201f5703766db6107249e854ffb508634c2786705e6efbeacaabdb6b035d0` (357450 bytes).
+- Corpus: sha256 `28e6d924a3f51f360239bc356be4890b098994c839e47ec44da9e309c0d69496` (360874 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `5d0eabdf207e7a114e8dbc8112ed3b044537b711`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
@@ -168,6 +168,8 @@ No second build of this corpus has been compared yet.
 - Additional ordinances are the oldest version available in their official SIBOM bulletin, with first_law null. They are dated by their own in-force clause or the ninth day after official publication; amendments are not consolidated.
 - A complete HTML ordinance without a recognised article split is kept as a single-file act (texto-completo.md). Extracts and pages without substantive ordinance text are not included.
 - No previously included law text or version is changed.
+- ordenanza-13849-2025: withdraw the incomplete corpus record; source identity ordenanza-13849-2025. The original history and tags remain. This is not a legislative repeal.
+- ordenanza-13853-2025: withdraw the incomplete corpus record; source identity ordenanza-13853-2025. The original history and tags remain. This is not a legislative repeal.
 
 ## What AI did and did not do
 
@@ -180,3 +182,4 @@ The commit messages are written by `build.py` from the source data.
 Model use at data-build time:
 - A model (Claude) wrote the fetch and parse code and chose which norms to include; it wrote no law text. Every word of law comes from the provincial source's own texts.
 - GPT-6 wrote the local parser and validation code; it wrote no law text. All legal wording is from the official SIBOM page.
+- A model classified source completeness and prepared editorial withdrawal metadata. No model-generated legal text is included.
